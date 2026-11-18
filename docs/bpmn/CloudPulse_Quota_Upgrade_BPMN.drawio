@@ -1,0 +1,369 @@
+<mxfile host="Electron">
+  <diagram name="Quota Monitoring and Upgrade" id="cp1">
+    <mxGraphModel dx="1493" dy="1026" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3200" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L1" parent="1" style="swimlane;horizontal=0;startSize=40;html=1;whiteSpace=wrap;fillColor=#f5f9ff;strokeColor=#666666;fontStyle=1;" value="Lane 1: Workspace User (Developer / Admin)" vertex="1">
+          <mxGeometry height="180" width="3050" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U9" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Permission denied" vertex="1">
+          <mxGeometry height="40" width="40" x="2040" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U7" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Payment error seen" vertex="1">
+          <mxGeometry height="40" width="40" x="2170" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U6" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Dashboard viewed" vertex="1">
+          <mxGeometry height="40" width="40" x="840" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U8" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Session expired" vertex="1">
+          <mxGeometry height="40" width="40" x="540" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U1" parent="L1" style="shape=mxgraph.bpmn.task;taskMarker=user;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Click Upgrade to Pro" vertex="1">
+          <mxGeometry height="60" width="120" x="1200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U5" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Request Admin CTA shown" vertex="1">
+          <mxGeometry height="40" width="40" x="1130" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U2" parent="L1" style="shape=mxgraph.bpmn.task;taskMarker=user;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Confirm upgrade in modal" vertex="1">
+          <mxGeometry height="60" width="120" x="1400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U3" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Pro plan active" vertex="1">
+          <mxGeometry height="40" width="40" x="2730" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U4" parent="L1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Payment failure seen" vertex="1">
+          <mxGeometry height="40" width="40" x="2880" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" style="swimlane;horizontal=0;startSize=40;html=1;whiteSpace=wrap;fillColor=#f7fff5;strokeColor=#666666;fontStyle=1;" value="Lane 2: CloudPulse Console Frontend" vertex="1">
+          <mxGeometry height="340" width="3050" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F6" parent="L2" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="User role is Admin?" vertex="1">
+          <mxGeometry height="50" width="50" x="960" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F10" parent="L2" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show &#39;Request Admin to Upgrade&#39; CTA" vertex="1">
+          <mxGeometry height="60" width="120" x="1090" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="L2" source="n_F6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F10" value="Developer/&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Billing_Viewer&lt;/span&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0769" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1080" y="170" />
+              <mxPoint x="1080" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n_F11" parent="L2" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Redirect to login" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F2" parent="L2" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Usage state?" vertex="1">
+          <mxGeometry height="50" width="50" x="640" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F8" parent="L2" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Open 1-click upgrade modal" vertex="1">
+          <mxGeometry height="60" width="120" x="1280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F9" parent="L2" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="POST /billing/upgrade-subscription" vertex="1">
+          <mxGeometry height="60" width="120" x="1520" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" parent="1" style="swimlane;horizontal=0;startSize=40;html=1;whiteSpace=wrap;fillColor=#fffdf2;strokeColor=#666666;fontStyle=1;" value="Lane 3: CloudPulse Backend &amp; Quota Engine" vertex="1">
+          <mxGeometry height="480" width="3050" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B16" parent="L3" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Write Payment_Succeeded; plan_tier=Pro; quota_limit=50000; status=Active" vertex="1">
+          <mxGeometry height="80" width="130" x="2450" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B17" parent="L3" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Write Payment_Failed; status=Past_Due" vertex="1">
+          <mxGeometry height="60" width="120" x="2455" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B4" parent="L3" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Write Quota_80_Reached (once per cycle)" vertex="1">
+          <mxGeometry height="60" width="120" x="690" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B5" parent="L3" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Return 429; log 429; write Quota_100_Blocked" vertex="1">
+          <mxGeometry height="60" width="120" x="690" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="n_BE2" parent="L3" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Request blocked" vertex="1">
+          <mxGeometry height="40" width="40" x="870" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" edge="1" parent="L3" source="n_B5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_BE2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B8" parent="L3" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Return HTTP 200 usage summary" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" parent="1" style="swimlane;horizontal=0;startSize=40;html=1;whiteSpace=wrap;fillColor=#fbf5ff;strokeColor=#666666;fontStyle=1;" value="Lane 4: Stripe Payment Gateway" vertex="1">
+          <mxGeometry height="170" width="3050" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="n_S4" parent="L4" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=throwing;symbol=message;" value="invoice.payment_failed" vertex="1">
+          <mxGeometry height="40" width="40" x="2360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n_S3" parent="L4" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=throwing;symbol=message;" value="invoice.paid" vertex="1">
+          <mxGeometry height="40" width="40" x="2360" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="n_U0" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" value="Open Console dashboard" vertex="1">
+          <mxGeometry height="40" width="40" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F1" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Call GET /usage-summary" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F3" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Render progress bar" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F4" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show 80% warning banner" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F5" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show 100% blocked banner (429)" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F12" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show insufficient-permission message" vertex="1">
+          <mxGeometry height="60" width="120" x="2000" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F13" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show payment error" vertex="1">
+          <mxGeometry height="60" width="120" x="2130" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F14" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show upgrade success" vertex="1">
+          <mxGeometry height="60" width="120" x="2690" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="n_F15" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Show payment-failure notice" vertex="1">
+          <mxGeometry height="60" width="120" x="2840" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B6" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Bearer token valid?" vertex="1">
+          <mxGeometry height="50" width="50" x="385" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B7" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Return HTTP 401" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B9" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Role is Admin? (server-side)" vertex="1">
+          <mxGeometry height="50" width="50" x="1735" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B10" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Return HTTP 403" vertex="1">
+          <mxGeometry height="60" width="120" x="1850" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B11" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Initiate Stripe payment; write Upgrade_Initiated" vertex="1">
+          <mxGeometry height="60" width="120" x="1850" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B12" parent="n_B11" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=boundInt;symbol=error;" value="Stripe rejects payment" vertex="1">
+          <mxGeometry height="30" width="30" x="45" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B13" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Return HTTP 402" vertex="1">
+          <mxGeometry height="60" width="120" x="1850" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B14" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=catching;symbol=message;" value="Receive POST /webhooks/stripe-events" vertex="1">
+          <mxGeometry height="40" width="40" x="2150" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B15" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Event type?" vertex="1">
+          <mxGeometry height="50" width="50" x="2335" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B0" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" value="Metered API request received" vertex="1">
+          <mxGeometry height="40" width="40" x="240" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B1" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Compare usage with quota_limit" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B2" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Usage level?" vertex="1">
+          <mxGeometry height="50" width="50" x="575" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="n_B3" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Serve request; log status_code 200" vertex="1">
+          <mxGeometry height="60" width="120" x="860" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="n_BE1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=general;" value="End: Request served" vertex="1">
+          <mxGeometry height="40" width="40" x="1050" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="n_S1" parent="1" style="shape=mxgraph.bpmn.task;taskMarker=service;html=1;whiteSpace=wrap;rounded=1;arcSize=10;strokeWidth=2;" value="Process payment" vertex="1">
+          <mxGeometry height="60" width="120" x="2000" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="n_S2" parent="1" style="shape=mxgraph.bpmn.gateway2;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=none;symbol=none;gwType=exclusive;" value="Payment outcome?" vertex="1">
+          <mxGeometry height="50" width="50" x="2185" y="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="n_U0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="n_F1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="n_B6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B7" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="n_B6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B8" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="n_B7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="n_F11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="n_B8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="n_F2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F3" value="Below 80%, Active">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="350" />
+              <mxPoint x="720" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="n_F2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F4" value="80-99%,&amp;nbsp;&lt;div&gt;Quota_80_Reached&lt;/div&gt;">
+          <mxGeometry relative="1" x="0.0769" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="n_F2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F5" value="100%, Quota_100_Blocked">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="350" />
+              <mxPoint x="720" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="n_F3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="n_F4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n_F5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="n_F10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U1" value="Admin">
+          <mxGeometry relative="1" x="-0.2" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1030" y="230" />
+              <mxPoint x="1260" y="230" />
+            </Array>
+            <mxPoint x="1030" y="350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="n_F8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="n_U2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F9" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="n_F9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="n_B9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B10" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="n_B10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="n_F12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="n_B9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B11" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="n_B11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B14" value="HTTP 200 pending">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="n_B11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 4;startArrow=oval;startFill=0;endArrow=open;endFill=0;" target="n_S1" value="message: create charge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="n_B12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B13" value="error">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="n_B13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="n_F13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="n_S1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_S2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="n_S2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_S3" value="succeeded">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="n_S2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_S4" value="failed">
+          <mxGeometry relative="1" x="-0.1282" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="n_S3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 4;startArrow=oval;startFill=0;endArrow=open;endFill=0;" target="n_B14" value="invoice.paid">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2380" y="930" />
+              <mxPoint x="2170" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="n_S4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;dashed=1;dashPattern=8 4;startArrow=oval;startFill=0;endArrow=open;endFill=0;" target="n_B14" value="invoice.payment_failed">
+          <mxGeometry relative="1" x="-0.7818" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="n_B14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="n_B15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B16" value="invoice.paid">
+          <mxGeometry relative="1" x="0.7778" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="n_B15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B17" value="invoice.payment_failed">
+          <mxGeometry relative="1" x="0.7778" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="n_B16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="n_B17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_F15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e39" edge="1" parent="1" source="n_F14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="n_F15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_U4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="n_B0" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" edge="1" parent="1" source="n_B1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" edge="1" parent="1" source="n_B2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B3" value="Below 80%">
+          <mxGeometry relative="1" x="0.5745" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e44" edge="1" parent="1" source="n_B2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B4" value="80-99%">
+          <mxGeometry relative="1" x="0.6757" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e45" edge="1" parent="1" source="n_B2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_B5" value="100%+">
+          <mxGeometry relative="1" x="0.6757" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e46" edge="1" parent="1" source="n_B4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;entryX=0.557;entryY=-0.013;entryDx=0;entryDy=0;entryPerimeter=0;" target="n_B3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e47" edge="1" parent="1" source="n_B3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;fontSize=10;labelBackgroundColor=#ffffff;" target="n_BE1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qBUnq29GtmX8ve3i7gco-2" edge="1" parent="1" source="n_U1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.495;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;curved=0;" target="n_F8">
+          <mxGeometry relative="1" x="0.3832" as="geometry">
+            <Array as="points">
+              <mxPoint x="1339.4" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,9 @@
+org_id,org_name,plan_tier,current_account_status,failed_payment_attempts,last_failed_payment_ts,mrr_at_risk_usd,historical_successful_calls
+org_0144,Apex Systems,Pro,Past_Due,994,2026-11-13 22:47:24,99.0,10695
+org_0140,Northwind Energy,Pro,Past_Due,1815,2026-11-13 22:21:44,99.0,12606
+org_0338,Quartz Retail,Pro,Past_Due,601,2026-11-14 22:26:25,99.0,7952
+org_0292,Nova Networks,Pro,Past_Due,178,2026-11-14 12:47:37,99.0,924
+org_0242,Lumina Systems,Pro,Suspended,36,2026-09-01 22:12:35,99.0,84
+org_0185,Lumina Studios,Pro,Suspended,624,2026-10-21 23:41:42,99.0,3781
+org_0243,Apex Retail,Pro,Suspended,72,2026-11-01 04:31:07,99.0,170
+org_0461,Meridian Media,Pro,Suspended,213,2026-11-10 02:36:30,99.0,549

@@ -1,0 +1,3 @@
+quota_experience_cohort,total_orgs_hitting_threshold,converted_orgs,conversion_rate_pct,total_new_mrr_usd
+Warned at 80% Quota (Proactive Banner),127,16,12.6,1584.0
+Abrupt 100% Block Only (HTTP 429 Wall),73,1,1.37,99.0
