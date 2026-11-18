@@ -154,4 +154,4 @@ python data/generate_cloudpulse_data.py --out-dir data/out      # 4 CSVs
 ```
 
 ---
-**Author:** [Your Name] · [LinkedIn](https://linkedin.com/in/hieuvo825/) · [Email](vnmhieu080205@gmail.com)
+**Author:** [HenryVo] · [LinkedIn](https://linkedin.com/in/hieuvo825/) · [Email](vnmhieu080205@gmail.com)
